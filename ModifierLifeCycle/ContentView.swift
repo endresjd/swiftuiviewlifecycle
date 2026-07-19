@@ -27,22 +27,18 @@ struct ContentView: View {
     /// Increments to trigger a ContentView rerender without touching CounterView's inputs.
     @State private var parentCount = 0
 
-    /// Controls the structural identity of ``CounterView``. Replacing this UUID
-    /// causes SwiftUI to destroy the existing instance and insert a brand-new one,
-    /// resetting all `@State` inside it back to initial values.
-    @State private var viewID = UUID()
-
     var body: some View {
         let _ = print("[ContentView] body evaluated — parentCount is \(parentCount)")
 
         NavigationStack {
             ScrollView {
-                LifetimeDemoContent(viewID: $viewID) {
+                LifetimeDemoContent() {
                     parentCount += 1
                 }
                 .lifetimePrint("LifetimeDemoContent (external)")
             }
             .navigationTitle("Lifetime Demo")
+            .lifetimePrint("NavigationStack (external)")
         }
     }
 }

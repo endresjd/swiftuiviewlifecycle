@@ -38,7 +38,7 @@ struct LifetimePrintModifier: ViewModifier {
     private let renderID = UUID()
 
     func body(content: Content) -> some View {
-        let _ = print("[\(label)] modifier body evaluated")
+        let _ = print("    [\(label)] modifier body evaluated")
 
         // .opacity(1) is a no-op visually (1.0 is the default), but it changes the
         // concrete return type from `Content` to `ModifiedContent<Content, _OpacityEffect>`.

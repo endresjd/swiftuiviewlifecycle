@@ -6,8 +6,13 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		458A474E300D3D8700E548B6 /* SwiftUIViewLifecycle.md in Resources */ = {isa = PBXBuildFile; fileRef = 458A474D300D3D8700E548B6 /* SwiftUIViewLifecycle.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* ModifierLifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModifierLifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		458A474D300D3D8700E548B6 /* SwiftUIViewLifecycle.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SwiftUIViewLifecycle.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +36,7 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000010 /* ModifierLifeCycle */,
+				458A474D300D3D8700E548B6 /* SwiftUIViewLifecycle.md */,
 				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +108,7 @@
 		000000000000000140000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				458A474E300D3D8700E548B6 /* SwiftUIViewLifecycle.md in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
