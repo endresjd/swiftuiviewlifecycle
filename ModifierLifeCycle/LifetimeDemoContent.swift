@@ -27,6 +27,14 @@ struct LifetimeDemoContent: View {
 
             Divider()
 
+            BankAccountSelectionSection()
+
+            Divider()
+
+            BankAccountMenuPickerSection()
+
+            Divider()
+
             NavigationLifetimeView()
         }
         .padding()
