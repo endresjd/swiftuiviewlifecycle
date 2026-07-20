@@ -12,6 +12,8 @@ struct BankAccountMenuPicker: View {
     @Binding var selectedAccount: BankAccount?
     
     var body: some View {
+        let _ = print("[BankAccountMenuPicker] body evaluated")
+
         VStack(alignment: .leading, spacing: 8) {
             Text("Selected Account")
                 .font(.caption)

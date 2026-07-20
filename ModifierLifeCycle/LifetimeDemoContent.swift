@@ -28,10 +28,12 @@ struct LifetimeDemoContent: View {
             Divider()
 
             BankAccountSelectionSection()
+                .lifetimePrint("BankAccountSelectionSection")
 
             Divider()
 
             BankAccountMenuPickerSection()
+                .lifetimePrint("BankAccountMenuPickerSection")
 
             Divider()
 

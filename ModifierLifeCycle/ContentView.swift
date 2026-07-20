@@ -35,10 +35,10 @@ struct ContentView: View {
                 LifetimeDemoContent() {
                     parentCount += 1
                 }
-                .lifetimePrint("LifetimeDemoContent (external)")
+                .lifetimePrint("LifetimeDemoContent -- \(parentCount)")
             }
             .navigationTitle("Lifetime Demo")
-            .lifetimePrint("NavigationStack (external)")
+            .lifetimePrint("NavigationStack")
         }
     }
 }

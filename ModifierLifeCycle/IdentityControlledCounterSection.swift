@@ -26,14 +26,14 @@ struct IdentityControlledCounterSection: View {
                 .font(.headline)
 
             VStack(alignment: .center) {
-                Text("Identity: \(viewID.uuidString.prefix(8))…")
+                Text("Identity: \(viewID.uuidString)")
                     .font(.caption.monospaced())
                     .foregroundStyle(.secondary)
 
                 CounterView(label: "Counter")
                     .id(viewID)
                     .padding(.bottom)
-                    .lifetimePrint("CounterView (external)")
+                    .lifetimePrint("CounterView")
 
                 HStack(spacing: 12) {
                     Button("Reset Identity") {

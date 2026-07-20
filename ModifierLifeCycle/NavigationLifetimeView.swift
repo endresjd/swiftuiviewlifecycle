@@ -23,7 +23,7 @@ struct NavigationLifetimeView: View {
 
         NavigationLink("Go to Detail View") {
             DetailView()
-                .lifetimePrint("DetailView (external)")
+                .lifetimePrint("DetailView")
         }
         .buttonStyle(.borderedProminent)
         .frame(maxWidth: .infinity)

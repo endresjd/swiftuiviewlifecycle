@@ -24,6 +24,8 @@ struct BankAccountSelectionCard: View {
     }
     
     var body: some View {
+        let _ = print("[BankAccountSelectionCard] body evaluated")
+
         HStack {
             VStack(alignment: .leading, spacing: 4) {
                 Text(labelText)

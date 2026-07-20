@@ -13,6 +13,8 @@ struct BankAccountListView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
+        let _ = print("[BankAccountListView] body evaluated")
+
         List(BankAccount.sampleAccounts) { account in
             Button {
                 selectedAccount = account
